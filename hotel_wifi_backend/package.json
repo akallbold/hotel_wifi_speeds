@@ -1,0 +1,22 @@
+{
+  "name": "hotel-wifi-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -r babel-register ./bin/www"
+  },
+  "dependencies": {
+  "babel-register": "^6.26.0",
+  "cookie-parser": "~1.4.3",
+  "cors": "^2.8.4",
+  "debug": "~2.6.9",
+  "express": "~4.16.0",
+  "http-errors": "~1.6.2",
+  "jade": "~1.11.0",
+  "morgan": "~1.9.0",
+  "nodemon": "^1.18.1",
+  "pg": "^7.4.3",
+  "pg-hstore": "^2.3.2",
+  "pug": "2.0.0-beta11"
+}
+}
