@@ -1,7 +1,10 @@
 
 
-export let savePlacesToUser = () => {
+export let changeFormValues = (event) => {
+  // console.log("this", this)
+  // debugger
   return {
-    type:"SAVE_PLACES_TO_USER"
+    type:"CHANGE_FORM",
+    payload:event.target
   }
 }
