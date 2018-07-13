@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux"
-import {changeFormValues} from "./actions"
+import {changeFormValues, submitForm} from "./actions"
 
 
 class Form extends Component {
@@ -8,7 +8,7 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit = {this.props.submitForm(this.props.upload_speed, this.props.download_speed,this.props.latency)}>
           <div>
             <div>
               <input type="text" name= "upload_speed" value={this.props.upload_speed} onChange={this.props.changeFormValues}></input>
@@ -40,4 +40,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, {changeFormValues})(Form);
+export default connect(mapStateToProps, {changeFormValues, submitForm})(Form);
